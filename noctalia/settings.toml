@@ -1,0 +1,143 @@
+config_version = 16
+
+[bar.default]
+background_opacity = 0.29999999329447746
+end = [ "notifications", "clipboard", "volume", "widget", "tray", "session" ]
+font_family = "Cherry Bomb One"
+margin_edge = 5
+margin_ends = 500
+radius = 20
+shadow = false
+start = [ "workspaces", "wallpaper", "wallhaven" ]
+
+[control_center]
+hidden_tabs = [ "network", "bluetooth" ]
+
+[location]
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@WL-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 467.99551391601562
+    cy = 844.93182373046875
+    output = "WL-1"
+    placement_height = 1028.0
+    placement_width = 935.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+layer = "overlay"
+
+[plugins]
+enabled = [ "yuuto/arch-updater", "noctalia/wallhaven", "noctalia/kaomoji" ]
+
+[shell]
+font_family = "Cherry Bomb One"
+popup_shadows = false
+
+    [shell.launcher]
+    category_icons_only = true
+    width = 610
+
+    [shell.panel]
+    shadow = false
+    transparency_mode = "glass"
+
+    [shell.screenshot]
+    confirm_region = true
+    remember_last_region = true
+    save_to_file = false
+
+[theme]
+source = "wallpaper"
+wallpaper_scheme = "faithful"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "kitty", "mango", "niri", "qt", "sway" ]
+    community_ids = [ "fuzzel", "papirus-icons", "bat" ]
+
+[wallpaper.default]
+path = "/home/helium/Pictures/wallhaven-7pyqqy.png"
+
+[wallpaper.last]
+path = "/home/helium/Pictures/wallhaven-7pyqqy.png"
+
+[wallpaper.monitors.DP-2]
+path = "/home/helium/Pictures/wallhaven-7pyqqy.png"
+
+[widget.clock]
+format = "{:%I:%M %p %a, %b %d}"
+
+[widget.tray]
+drawer = true
+
+[widget.wallhaven]
+enabled = false
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.wallpaper]
+enabled = false
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+hide_when_empty = true
+show_labels = false

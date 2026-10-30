@@ -88,7 +88,18 @@ layer_effects "noctalia-bar-default" {
     blur_ignore_transparent enable
     corner_radius 10
 }
-
+layer_effects "noctalia-attached-panel" {
+    blur enable
+    blur_xray enable
+    blur_ignore_transparent enable
+    corner_radius 10
+}
+layer_effects "noctalia-panel" {
+    blur enable
+    blur_xray enable
+    blur_ignore_transparent enable
+    corner_radius 10
+}
 
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
